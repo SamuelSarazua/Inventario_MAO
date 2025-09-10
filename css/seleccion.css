@@ -12,7 +12,7 @@
 }
 
 .header-sele {
-    width: 94.5%;
+    width: 94.2%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -37,14 +37,14 @@
     letter-spacing: 1px;
 }
 
-.div-botones{
+.div-botones-main{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.div-botones button {
+.div-botones-main button {
     width: 30%;
     height: 20rem;
     padding: 15px 30px;

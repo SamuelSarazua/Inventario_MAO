@@ -1,5 +1,40 @@
 .seccion-vista {
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    background-color: #e0f7fa; /* un color aqua suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* permite scroll si hay muchos botones */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.div-botones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px; /* ancho máximo */
+}
+
+.div-botones button {
+    width: 100%;
+    height: 10rem;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #4dd0e1, #00838f);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.div-botones button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #26c6da, #006064);
 }

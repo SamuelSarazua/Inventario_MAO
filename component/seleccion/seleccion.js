@@ -20,7 +20,7 @@ function seleccion(){
     seccionSele.appendChild(headerSele);
 
     let divBotones = document.createElement('div')
-    divBotones.className = "div-botones"
+    divBotones.className = "div-botones-main"
 
     let buttonAdmin = document.createElement('button');
     buttonAdmin.className = "admin"
