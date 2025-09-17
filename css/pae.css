@@ -1,0 +1,67 @@
+.pae-section {
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.pae-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7B1FA2;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+}
+
+.pae-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.pae-table th, 
+.pae-table td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+.pae-table thead {
+    background-color: #9C27B0;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pae-table tbody tr:nth-child(even) {
+    background-color: #F3E5F5;
+}
+
+.pae-table tbody tr:hover {
+    background-color: #E1BEE7;
+    transition: 0.3s;
+}
+
+.pae-volver-container {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pae-btn-volver {
+    background: #9C27B0;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.pae-btn-volver:hover {
+    background: #7B1FA2;
+    transform: scale(1.05);
+}

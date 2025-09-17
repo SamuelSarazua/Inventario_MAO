@@ -1,5 +1,6 @@
 import { seleccion } from "../seleccion/seleccion.js";
 import { vista } from "./vista.js";
+import { verificarLogin } from "../auth.js";  // ← Importar desde auth.js
 
 function loginVista() {
     let contenedorLogin = document.createElement('div');
@@ -9,7 +10,7 @@ function loginVista() {
     cajaLogin.className = "contenedor-login2";
 
     let tituloLogin = document.createElement('h2');
-    tituloLogin.textContent = "Login Vista";
+    tituloLogin.textContent = "Iniciar Sesión";
     cajaLogin.appendChild(tituloLogin);
 
     let formulario = document.createElement('form');
@@ -19,12 +20,14 @@ function loginVista() {
     inputUsuario.type = "text";
     inputUsuario.placeholder = "Usuario";
     inputUsuario.className = "input-usuario2";
+    inputUsuario.required = true;
     formulario.appendChild(inputUsuario);
 
     let inputContrasena = document.createElement('input');
     inputContrasena.type = "password";
     inputContrasena.placeholder = "Contraseña";
     inputContrasena.className = "input-contrasena2";
+    inputContrasena.required = true;
     formulario.appendChild(inputContrasena);
 
     let botonIngresar = document.createElement('button');
@@ -40,18 +43,32 @@ function loginVista() {
     botonVolver.className = "boton-volver2";
     cajaLogin.appendChild(botonVolver);
 
-    contenedorLogin.appendChild(cajaLogin);
+    let mensajeError = document.createElement('p');
+    mensajeError.className = "mensaje-error";
+    mensajeError.style.color = "red";
+    mensajeError.style.display = "none";
+    cajaLogin.appendChild(mensajeError);
 
+    contenedorLogin.appendChild(cajaLogin);
 
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
-        console.log("Usuario:", inputUsuario.value, "Contraseña:", inputContrasena.value);
-        const root = document.getElementById('root');
-        root.innerHTML = ""; 
-        root.appendChild(vista());
+        const username = inputUsuario.value.trim();
+        const password = inputContrasena.value.trim();
+        
+        const usuario = verificarLogin(username, password);
+        
+        if (usuario) {
+            sessionStorage.setItem('usuarioLogueado', JSON.stringify(usuario));
+            const root = document.getElementById('root');
+            root.innerHTML = ""; 
+            root.appendChild(vista());
+        } else {
+            mensajeError.textContent = "Usuario o contraseña incorrectos";
+            mensajeError.style.display = "block";
+        }
     });
 
-    // Evento del botón volver
     botonVolver.addEventListener('click', () => {
         const root = document.getElementById('root');
         root.innerHTML = ""; 

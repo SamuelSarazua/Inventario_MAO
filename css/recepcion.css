@@ -1,0 +1,68 @@
+.inventario-recepcion-section {
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'Verdana', sans-serif;
+}
+
+.inventario-recepcion-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e65100;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.inventario-recepcion-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fffaf5;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.inventario-recepcion-table th,
+.inventario-recepcion-table td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.inventario-recepcion-table thead {
+    background-color: #ff7043;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.inventario-recepcion-table tbody tr:nth-child(even) {
+    background-color: #ffe0b2;
+}
+
+.inventario-recepcion-table tbody tr:hover {
+    background-color: #ffccbc;
+    transition: 0.3s;
+}
+
+.recepcion-volver-container {
+    width: 100%;
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.recepcion-btn-volver {
+    background: #ff7043;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.recepcion-btn-volver:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}

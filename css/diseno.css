@@ -1,0 +1,67 @@
+.diseno-section {
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.diseno-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #AD1457;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+}
+
+.diseno-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.diseno-table th, 
+.diseno-table td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+.diseno-table thead {
+    background-color: #C2185B;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.diseno-table tbody tr:nth-child(even) {
+    background-color: #FCE4EC;
+}
+
+.diseno-table tbody tr:hover {
+    background-color: #F8BBD0;
+    transition: 0.3s;
+}
+
+.diseno-volver-container {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.diseno-btn-volver {
+    background: #C2185B;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.diseno-btn-volver:hover {
+    background: #AD1457;
+    transform: scale(1.05);
+}

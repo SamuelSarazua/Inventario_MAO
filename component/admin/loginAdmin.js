@@ -1,4 +1,7 @@
 import { seleccion } from "../seleccion/seleccion.js";
+import { admin } from "./admin.js";
+import { verificarLogin } from "../auth.js";
+import { vista } from "../vista/vista.js";
 
 function loginAdmin() {
     let contenedorLogin = document.createElement('div');
@@ -18,12 +21,14 @@ function loginAdmin() {
     inputUsuario.type = "text";
     inputUsuario.placeholder = "Usuario";
     inputUsuario.className = "input-usuario";
+    inputUsuario.required = true;
     formulario.appendChild(inputUsuario);
 
     let inputContrasena = document.createElement('input');
     inputContrasena.type = "password";
     inputContrasena.placeholder = "Contraseña";
     inputContrasena.className = "input-contrasena";
+    inputContrasena.required = true;
     formulario.appendChild(inputContrasena);
 
     let botonIngresar = document.createElement('button');
@@ -39,15 +44,33 @@ function loginAdmin() {
     botonVolver.className = "boton-volver";
     cajaLogin.appendChild(botonVolver);
 
-    contenedorLogin.appendChild(cajaLogin);
+    // Mensaje de error
+    let mensajeError = document.createElement('p');
+    mensajeError.className = "mensaje-error";
+    mensajeError.style.color = "red";
+    mensajeError.style.display = "none";
+    cajaLogin.appendChild(mensajeError);
 
+    contenedorLogin.appendChild(cajaLogin);
 
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
-        console.log("Usuario:", inputUsuario.value, "Contraseña:", inputContrasena.value);
+        const username = inputUsuario.value.trim();
+        const password = inputContrasena.value.trim();
+        
+        const usuario = verificarLogin(username, password);
+        
+        if (usuario && usuario.rol === "admin") {
+            sessionStorage.setItem('usuarioLogueado', JSON.stringify(usuario));
+            const root = document.getElementById('root');
+            root.innerHTML = ""; 
+            root.appendChild(vista());
+        } else {
+            mensajeError.textContent = "Credenciales incorrectas o no tiene permisos de administrador";
+            mensajeError.style.display = "block";
+        }
     });
 
-    // Evento del botón volver
     botonVolver.addEventListener('click', () => {
         const root = document.getElementById('root');
         root.innerHTML = ""; 

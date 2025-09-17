@@ -1,47 +1,66 @@
-.compras-section {
+.caja-section {
     width: 95%;
     margin: 20px auto;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
-.compras-section h2 {
+.caja-section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #1e3a8a; /* azul oscuro elegante */
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.compras-table {
+.caja-table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    border: 2px solid #1e40af; /* borde azul */
+    border-radius: 12px;
     overflow: hidden;
 }
 
-.compras-table th, .compras-table td {
+.caja-table th, .caja-table td {
     padding: 12px 15px;
-    text-align: left;
+    text-align: center;
+    border-bottom: 1px solid #dbeafe;
 }
 
-.compras-table thead {
-    background-color: #4CAF50;
+.caja-table thead {
+    background-color: #1e40af;
     color: white;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
-.compras-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+.caja-table tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
 }
 
-.compras-table tbody tr:hover {
-    background-color: #d6ffdf;
+.caja-table tbody tr:hover {
+    background-color: #dbeafe;
     transition: 0.3s;
 }
 
-.cont-volver{
+.caja-cont-volver {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.caja-boton-volver {
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.caja-boton-volver:hover {
+    background-color: #1d4ed8;
+}

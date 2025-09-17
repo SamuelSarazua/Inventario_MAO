@@ -1,47 +1,67 @@
-.compras-section {
+.inventario-section {
     width: 95%;
     margin: 20px auto;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
-.compras-section h2 {
+.inventario-section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #8B7500;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
 }
 
-.compras-table {
+.inventario-table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
+    background: #fafafa;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
-.compras-table th, .compras-table td {
-    padding: 12px 15px;
+.inventario-table th, 
+.inventario-table td {
+    padding: 14px 18px;
     text-align: left;
 }
 
-.compras-table thead {
-    background-color: #4CAF50;
+.inventario-table thead {
+    background-color: #DAA520;
     color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.compras-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+.inventario-table tbody tr:nth-child(even) {
+    background-color: #FFF8DC;
 }
 
-.compras-table tbody tr:hover {
-    background-color: #d6ffdf;
+.inventario-table tbody tr:hover {
+    background-color: #FFEBCD;
     transition: 0.3s;
 }
 
-.cont-volver{
+.volver-container {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
+.btn-volver {
+    background: #DAA520;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-volver:hover {
+    background: #8B7500;
+    transform: scale(1.05);
+}

@@ -1,0 +1,67 @@
+.homeschool-section {
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.homeschool-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #D84315;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+}
+
+.homeschool-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.homeschool-table th, 
+.homeschool-table td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+.homeschool-table thead {
+    background-color: #E64A19;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.homeschool-table tbody tr:nth-child(even) {
+    background-color: #FBE9E7;
+}
+
+.homeschool-table tbody tr:hover {
+    background-color: #FFCCBC;
+    transition: 0.3s;
+}
+
+.homeschool-volver-container {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.homeschool-btn-volver {
+    background: #E64A19;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.homeschool-btn-volver:hover {
+    background: #D84315;
+    transform: scale(1.05);
+}

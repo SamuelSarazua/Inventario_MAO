@@ -27,36 +27,38 @@ function seleccion(){
     buttonAdmin.textContent = "Administracion"
     divBotones.appendChild(buttonAdmin);
 
-    const root = document.getElementById('root');
-    root.appendChild(divBotones);
-
-    // Evento click en Administracion
-    buttonAdmin.addEventListener('click', () => {
-        root.innerHTML = ""; 
-        root.appendChild(loginAdmin()); 
-    });
-
     let buttonEditor = document.createElement('button');
     buttonEditor.className = "editor"
     buttonEditor.textContent = "Editor"
     divBotones.appendChild(buttonEditor);
-
-    buttonEditor.addEventListener('click', () => {
-        root.innerHTML = ""; 
-        root.appendChild(loginEditor()); 
-    });
 
     let buttonView = document.createElement('button');
     buttonView.className = "view"
     buttonView.textContent = "Vista"
     divBotones.appendChild(buttonView);
 
+    seccionSele.appendChild(divBotones)
+
+    // Evento click en Administracion
+    buttonAdmin.addEventListener('click', () => {
+        const root = document.getElementById('root');
+        root.innerHTML = ""; 
+        root.appendChild(loginAdmin()); 
+    });
+
+    // Evento click en Editor
+    buttonEditor.addEventListener('click', () => {
+        const root = document.getElementById('root');
+        root.innerHTML = ""; 
+        root.appendChild(loginEditor()); 
+    });
+
+    // Evento click en Vista
     buttonView.addEventListener('click', () => {
+        const root = document.getElementById('root');
         root.innerHTML = ""; 
         root.appendChild(loginVista()); 
     });
-
-    seccionSele.appendChild(divBotones)
 
     return seccionSele;
 }

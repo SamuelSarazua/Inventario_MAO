@@ -1,0 +1,67 @@
+.asistente-admin-section {
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.asistente-admin-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #37474F;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+}
+
+.asistente-admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.asistente-admin-table th, 
+.asistente-admin-table td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+.asistente-admin-table thead {
+    background-color: #455A64;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.asistente-admin-table tbody tr:nth-child(even) {
+    background-color: #ECEFF1;
+}
+
+.asistente-admin-table tbody tr:hover {
+    background-color: #CFD8DC;
+    transition: 0.3s;
+}
+
+.asistente-admin-volver-container {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.asistente-admin-btn-volver {
+    background: #455A64;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.asistente-admin-btn-volver:hover {
+    background: #37474F;
+    transform: scale(1.05);
+}

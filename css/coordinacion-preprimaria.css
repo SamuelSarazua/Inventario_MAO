@@ -1,0 +1,61 @@
+.prepri-section {
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.prepri-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0277bd; /* azul fuerte */
+}
+
+.prepri-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.prepri-table th, .prepri-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.prepri-table thead {
+    background-color: #0288d1; /* azul celeste */
+    color: white;
+}
+
+.prepri-table tbody tr:nth-child(even) {
+    background-color: #e1f5fe; /* azul claro */
+}
+
+.prepri-table tbody tr:hover {
+    background-color: #b3e5fc;
+    transition: 0.3s;
+}
+
+.prepri-cont-volver {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prepri-boton-volver {
+    padding: 10px 20px;
+    background-color: #0288d1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.prepri-boton-volver:hover {
+    background-color: #0277bd;
+}

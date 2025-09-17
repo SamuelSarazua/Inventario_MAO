@@ -1,0 +1,83 @@
+import { vista } from "../vista.js";
+
+function homeSchool() {
+    const datosCompras = [
+        { cantidad: 1, producto: "Laptop lenovo, core i3 13 Generacion, 8Gb Ram, 250ssd", codigo: "/N, PF4BN6Nf", departamento: "HOME SCHOOL", responsable: "Liseth Coque" },
+        { cantidad: 1, producto: "Laptop lenovo, core i3 13 Generacion, 8Gb Ram, 250ssd", codigo: "S/N: PF4BZCLS", departamento: "HOME SCHOOL", responsable: "Doyna Olavarrueth" },
+        { cantidad: 1, producto: "Laptop lenovo, core i3 13 Generacion, 8Gb Ram, 250ssd", codigo: "PF4BMMLF", departamento: "HOME SCHOOL", responsable: "Doyna Olavarrueth" },
+        { cantidad: 1, producto: "Laptop lenovo, core i3 13 Generacion, 8Gb Ram, 250ssd", codigo: "PF4BJGNH", departamento: "HOME SCHOOL", responsable: "Alma Juarez" },
+        { cantidad: 1, producto: "Impresora CANON", codigo: "Pixma G3110", departamento: "HOME SCHOOL", responsable: "Alma Juarez" },
+        { cantidad: 1, producto: "Telefono Samsung", codigo: "A52S / R5CT12KGWCX", departamento: "HOME SCHOOL", responsable: "Liseth Coque" },
+    ];
+
+    const section = document.createElement('section');
+    section.className = "homeschool-section";
+    
+    const titulo = document.createElement('h2');
+    titulo.textContent = "Inventario de Home School";
+    section.appendChild(titulo);
+    
+    const table = document.createElement('table');
+    table.className = "homeschool-table";
+    
+    const thead = document.createElement('thead');
+    const trHead = document.createElement('tr');
+    ["Cantidad", "Producto", "Código", "Departamento", "Responsable"].forEach(text => {
+        const th = document.createElement('th');
+        th.textContent = text;
+        trHead.appendChild(th);
+    });
+    thead.appendChild(trHead);
+    table.appendChild(thead);
+    
+    const tbody = document.createElement('tbody');
+    datosCompras.forEach(item => {
+        const tr = document.createElement('tr');
+    
+        const tdCantidad = document.createElement('td');
+        tdCantidad.textContent = item.cantidad;
+        tr.appendChild(tdCantidad);
+    
+        const tdProducto = document.createElement('td');
+        tdProducto.textContent = item.producto;
+        tr.appendChild(tdProducto);
+    
+        const tdCodigo = document.createElement('td');
+        tdCodigo.textContent = item.codigo;
+        tr.appendChild(tdCodigo);
+    
+        const tdDepartamento = document.createElement('td');
+        tdDepartamento.textContent = item.departamento;
+        tr.appendChild(tdDepartamento);
+    
+        const tdResponsable = document.createElement('td');
+        tdResponsable.textContent = item.responsable;
+        tr.appendChild(tdResponsable);
+    
+        tbody.appendChild(tr);
+    });
+    
+    table.appendChild(tbody);
+    section.appendChild(table);
+    
+    let contVolver = document.createElement('div');
+    contVolver.className = "homeschool-volver-container";
+    section.appendChild(contVolver);
+    
+    let botonVolver = document.createElement('button');
+    botonVolver.textContent = "Volver";
+    botonVolver.className = "homeschool-btn-volver";
+    contVolver.appendChild(botonVolver);
+    
+    section.appendChild(contVolver);
+    
+    botonVolver.addEventListener('click', () => {
+        const root = document.getElementById('root');
+        root.innerHTML = ""; 
+        root.appendChild(vista()); 
+    });
+
+    return section;
+}
+
+export { homeSchool };

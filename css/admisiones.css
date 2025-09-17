@@ -1,47 +1,67 @@
-.compras-section {
+.inventario-admisiones-section {
     width: 95%;
     margin: 20px auto;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
-.compras-section h2 {
+.inventario-admisiones-section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #4a148c;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
 }
 
-.compras-table {
+.inventario-admisiones-table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
+    background: #fafafa;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
-.compras-table th, .compras-table td {
-    padding: 12px 15px;
+.inventario-admisiones-table th, 
+.inventario-admisiones-table td {
+    padding: 14px 18px;
     text-align: left;
 }
 
-.compras-table thead {
-    background-color: #4CAF50;
+.inventario-admisiones-table thead {
+    background-color: #6a1b9a;
     color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.compras-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+.inventario-admisiones-table tbody tr:nth-child(even) {
+    background-color: #f3e5f5;
 }
 
-.compras-table tbody tr:hover {
-    background-color: #d6ffdf;
+.inventario-admisiones-table tbody tr:hover {
+    background-color: #ede7f6;
     transition: 0.3s;
 }
 
-.cont-volver{
+.admisiones-volver-container {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
+.admisiones-btn-volver {
+    background: #6a1b9a;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.admisiones-btn-volver:hover {
+    background: #4a148c;
+    transform: scale(1.05);
+}

@@ -24,15 +24,15 @@ function recursosHumanos() {
         { cantidad: 1, producto: "Extención Telefónica", codigo: "1033", departamento: "RECURSOS HUMANOS ", responsable: "MERCEDES GRAMAJO -- JANETT CARDONA  BEVERLY LOPEZ" },
     ];
 
-    const section = document.createElement('section');
-    section.className = "compras-section";
+     const section = document.createElement('section');
+    section.className = "inventario-section";
 
     const titulo = document.createElement('h2');
     titulo.textContent = "Inventario de Recursos Humanos";
     section.appendChild(titulo);
 
     const table = document.createElement('table');
-    table.className = "compras-table";
+    table.className = "inventario-table";
 
     const thead = document.createElement('thead');
     const trHead = document.createElement('tr');
@@ -72,19 +72,16 @@ function recursosHumanos() {
     });
 
     table.appendChild(tbody);
-
     section.appendChild(table);
 
     let contVolver = document.createElement('div');
-    contVolver.className = "cont-volver";
+    contVolver.className = "volver-container";
     section.appendChild(contVolver);
 
     let botonVolver = document.createElement('button');
     botonVolver.textContent = "Volver";
-    botonVolver.className = "boton-volver2";
+    botonVolver.className = "btn-volver";
     contVolver.appendChild(botonVolver);
-
-    section.appendChild(contVolver);
 
     // Evento del botón volver
     botonVolver.addEventListener('click', () => {
