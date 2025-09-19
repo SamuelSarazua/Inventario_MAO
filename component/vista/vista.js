@@ -36,10 +36,11 @@ function vista(){
     seccionVista.className = "seccion-vista";
     
     let headerSele = document.createElement('header');
-    headerSele.className = "header-sele";
+    headerSele.className = "header-sele2";
 
     let titulo = document.createElement('h1');
     titulo.textContent = "Colegio Manos a la Obra";
+    titulo.className = "titulo-sele2";
 
     let contCerSes = document.createElement('div');
     contCerSes.className = "cont-volver-vista";

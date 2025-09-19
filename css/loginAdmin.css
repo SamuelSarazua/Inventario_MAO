@@ -7,6 +7,8 @@
     align-items: center;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* degradado diferente y más cálido */
     font-family: 'Arial', sans-serif;
+    background-image: url('https://wallpapers.com/images/hd/pink-sky-1920-x-1080-wallpaper-zotqvm6dxs54vm85.jpg');
+    background-size: cover;
 }
 
 /* Contenedor interno del login */

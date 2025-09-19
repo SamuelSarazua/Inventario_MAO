@@ -1,5 +1,4 @@
 import { seleccion } from "../seleccion/seleccion.js";
-import { editor } from "./editor.js";
 import { verificarLogin } from "../auth.js";
 import { vista } from "../vista/vista.js";
 
