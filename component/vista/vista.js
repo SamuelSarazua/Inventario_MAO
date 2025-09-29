@@ -48,7 +48,7 @@ function vista(){
 
     let botonCerSes = document.createElement('button');
     botonCerSes.textContent = "Cerrar Sesión";
-    botonCerSes.className = "boton-volver2";
+    botonCerSes.className = "boton-cerrar-sesion";
     contCerSes.appendChild(botonCerSes);
 
     headerSele.appendChild(contCerSes);
@@ -71,7 +71,7 @@ function vista(){
     divBotones.className = "div-botones"
 
     let buttonAdmin = document.createElement('button');
-    buttonAdmin.className = "admin"
+    buttonAdmin.className = "btn-vista"
     buttonAdmin.textContent = "Compras"
     divBotones.appendChild(buttonAdmin);
     buttonAdmin.addEventListener('click', () => {
@@ -81,7 +81,7 @@ function vista(){
     });
 
     let buttonAdmin2 = document.createElement('button');
-    buttonAdmin2.className = "admin"
+    buttonAdmin2.className = "btn-vista"
     buttonAdmin2.textContent = "Recursos Humanos"
     divBotones.appendChild(buttonAdmin2);
     buttonAdmin2.addEventListener('click', () => {
@@ -91,7 +91,7 @@ function vista(){
     });
 
     let buttonAdmin3 = document.createElement('button');
-    buttonAdmin3.className = "admin"
+    buttonAdmin3.className = "btn-vista"
     buttonAdmin3.textContent = "Admisiones"
     divBotones.appendChild(buttonAdmin3);
     buttonAdmin3.addEventListener('click', () => {
@@ -101,7 +101,7 @@ function vista(){
     });
 
     let buttonAdmin4 = document.createElement('button');
-    buttonAdmin4.className = "admin"
+    buttonAdmin4.className = "btn-vista"
     buttonAdmin4.textContent = "Recepción"
     divBotones.appendChild(buttonAdmin4);
     buttonAdmin4.addEventListener('click', () => {
@@ -111,7 +111,7 @@ function vista(){
     });
 
     let buttonAdmin5 = document.createElement('button');
-    buttonAdmin5.className = "admin"
+    buttonAdmin5.className = "btn-vista"
     buttonAdmin5.textContent = "Caja"
     divBotones.appendChild(buttonAdmin5);
     buttonAdmin5.addEventListener('click', () => {
@@ -121,7 +121,7 @@ function vista(){
     });
 
     let buttonAdmin6 = document.createElement('button');
-    buttonAdmin6.className = "admin"
+    buttonAdmin6.className = "btn-vista"
     buttonAdmin6.textContent = "Contabilidad"
     divBotones.appendChild(buttonAdmin6);
     buttonAdmin6.addEventListener('click', () => {
@@ -131,7 +131,7 @@ function vista(){
     });
 
     let buttonAdmin7 = document.createElement('button');
-    buttonAdmin7.className = "admin"
+    buttonAdmin7.className = "btn-vista"
     buttonAdmin7.textContent = "Coordinación Preprimaria"
     divBotones.appendChild(buttonAdmin7);
     buttonAdmin7.addEventListener('click', () => {
@@ -141,7 +141,7 @@ function vista(){
     });
 
     let buttonAdmin8 = document.createElement('button');
-    buttonAdmin8.className = "admin"
+    buttonAdmin8.className = "btn-vista"
     buttonAdmin8.textContent = "Salones Preprimaria"
     divBotones.appendChild(buttonAdmin8);
     buttonAdmin8.addEventListener('click', () => {
@@ -151,8 +151,8 @@ function vista(){
     });
 
     let buttonAdmin9 = document.createElement('button');
-    buttonAdmin9.className = "admin"
-    buttonAdmin9.textContent = "Secundaria 1"
+    buttonAdmin9.className = "btn-vista"
+    buttonAdmin9.textContent = "Secundaria"
     divBotones.appendChild(buttonAdmin9);
     buttonAdmin9.addEventListener('click', () => {
         const root = document.getElementById('root');
@@ -161,7 +161,7 @@ function vista(){
     });
 
     let buttonAdmin10 = document.createElement('button');
-    buttonAdmin10.className = "admin"
+    buttonAdmin10.className = "btn-vista"
     buttonAdmin10.textContent = "Cordinación Secundaria"
     divBotones.appendChild(buttonAdmin10);
     buttonAdmin10.addEventListener('click', () => {
@@ -171,7 +171,7 @@ function vista(){
     });
 
     let buttonAdmin11 = document.createElement('button');
-    buttonAdmin11.className = "admin"
+    buttonAdmin11.className = "btn-vista"
     buttonAdmin11.textContent = "Laboratorio 1 Progrentis"
     divBotones.appendChild(buttonAdmin11);
     buttonAdmin11.addEventListener('click', () => {
@@ -181,7 +181,7 @@ function vista(){
     });
 
     let buttonAdmin12 = document.createElement('button');
-    buttonAdmin12.className = "admin"
+    buttonAdmin12.className = "btn-vista"
     buttonAdmin12.textContent = "Primaria Superior"
     divBotones.appendChild(buttonAdmin12);
     buttonAdmin12.addEventListener('click', () => {
@@ -191,7 +191,7 @@ function vista(){
     });
 
     let buttonAdmin13 = document.createElement('button');
-    buttonAdmin13.className = "admin"
+    buttonAdmin13.className = "btn-vista"
     buttonAdmin13.textContent = "Laboratorio 2 Primaria"
     divBotones.appendChild(buttonAdmin13);
     buttonAdmin13.addEventListener('click', () => {
@@ -201,7 +201,7 @@ function vista(){
     });
 
     let buttonAdmin14 = document.createElement('button');
-    buttonAdmin14.className = "admin"
+    buttonAdmin14.className = "btn-vista"
     buttonAdmin14.textContent = "Coordinación Primaria Elemental"
     divBotones.appendChild(buttonAdmin14);
     buttonAdmin14.addEventListener('click', () => {
@@ -211,7 +211,7 @@ function vista(){
     });
 
     let buttonAdmin15 = document.createElement('button');
-    buttonAdmin15.className = "admin"
+    buttonAdmin15.className = "btn-vista"
     buttonAdmin15.textContent = "Salones Primaria Elemental"
     divBotones.appendChild(buttonAdmin15);
     buttonAdmin15.addEventListener('click', () => {
@@ -221,7 +221,7 @@ function vista(){
     });
 
     let buttonAdmin16 = document.createElement('button');
-    buttonAdmin16.className = "admin"
+    buttonAdmin16.className = "btn-vista"
     buttonAdmin16.textContent = "Laboratorio de Secundaria"
     divBotones.appendChild(buttonAdmin16);
     buttonAdmin16.addEventListener('click', () => {
@@ -232,7 +232,7 @@ function vista(){
 
 
     let buttonAdmin18 = document.createElement('button');
-    buttonAdmin18.className = "admin"
+    buttonAdmin18.className = "btn-vista"
     buttonAdmin18.textContent = "Carrito de iPad Secundaria"
     divBotones.appendChild(buttonAdmin18);
     buttonAdmin18.addEventListener('click', () => {
@@ -242,7 +242,7 @@ function vista(){
     });
 
     let buttonAdmin19 = document.createElement('button');
-    buttonAdmin19.className = "admin"
+    buttonAdmin19.className = "btn-vista"
     buttonAdmin19.textContent = "Carrito de iPad Primaria Superior"
     divBotones.appendChild(buttonAdmin19);
     buttonAdmin19.addEventListener('click', () => {
@@ -252,7 +252,7 @@ function vista(){
     });
 
     let buttonAdmin20 = document.createElement('button');
-    buttonAdmin20.className = "admin"
+    buttonAdmin20.className = "btn-vista"
     buttonAdmin20.textContent = "Carrito de iPad Primaria Elemental"
     divBotones.appendChild(buttonAdmin20);
     buttonAdmin20.addEventListener('click', () => {
@@ -262,7 +262,7 @@ function vista(){
     });
 
     let buttonAdmin21 = document.createElement('button');
-    buttonAdmin21.className = "admin"
+    buttonAdmin21.className = "btn-vista"
     buttonAdmin21.textContent = "Carrito de iPad de Preprimaria"
     divBotones.appendChild(buttonAdmin21);
     buttonAdmin21.addEventListener('click', () => {
@@ -272,7 +272,7 @@ function vista(){
     });
 
     let buttonAdmin22 = document.createElement('button');
-    buttonAdmin22.className = "admin"
+    buttonAdmin22.className = "btn-vista"
     buttonAdmin22.textContent = "Home School"
     divBotones.appendChild(buttonAdmin22);
     buttonAdmin22.addEventListener('click', () => {
@@ -282,7 +282,7 @@ function vista(){
     });
 
     let buttonAdmin23 = document.createElement('button');
-    buttonAdmin23.className = "admin"
+    buttonAdmin23.className = "btn-vista"
     buttonAdmin23.textContent = "Gerencia financiera"
     divBotones.appendChild(buttonAdmin23);
     buttonAdmin23.addEventListener('click', () => {
@@ -292,7 +292,7 @@ function vista(){
     });
 
     let buttonAdmin24 = document.createElement('button');
-    buttonAdmin24.className = "admin"
+    buttonAdmin24.className = "btn-vista"
     buttonAdmin24.textContent = "Dirección Técnica"
     divBotones.appendChild(buttonAdmin24);
     buttonAdmin24.addEventListener('click', () => {
@@ -302,7 +302,7 @@ function vista(){
     });
 
     let buttonAdmin25 = document.createElement('button');
-    buttonAdmin25.className = "admin"
+    buttonAdmin25.className = "btn-vista"
     buttonAdmin25.textContent = "Enfermería"
     divBotones.appendChild(buttonAdmin25);
     buttonAdmin25.addEventListener('click', () => {
@@ -312,7 +312,7 @@ function vista(){
     });
 
     let buttonAdmin26 = document.createElement('button');
-    buttonAdmin26.className = "admin"
+    buttonAdmin26.className = "btn-vista"
     buttonAdmin26.textContent = "PAE"
     divBotones.appendChild(buttonAdmin26);
     buttonAdmin26.addEventListener('click', () => {
@@ -322,7 +322,7 @@ function vista(){
     });
 
     let buttonAdmin27 = document.createElement('button');
-    buttonAdmin27.className = "admin"
+    buttonAdmin27.className = "btn-vista"
     buttonAdmin27.textContent = "Coordinación Superior"
     divBotones.appendChild(buttonAdmin27);
     buttonAdmin27.addEventListener('click', () => {
@@ -332,7 +332,7 @@ function vista(){
     });
 
     let buttonAdmin28 = document.createElement('button');
-    buttonAdmin28.className = "admin"
+    buttonAdmin28.className = "btn-vista"
     buttonAdmin28.textContent = "Dirección Técnica 2"
     divBotones.appendChild(buttonAdmin28);
     buttonAdmin28.addEventListener('click', () => {
@@ -342,7 +342,7 @@ function vista(){
     });
 
     let buttonAdmin29 = document.createElement('button');
-    buttonAdmin29.className = "admin"
+    buttonAdmin29.className = "btn-vista"
     buttonAdmin29.textContent = "Diseño"
     divBotones.appendChild(buttonAdmin29);
     buttonAdmin29.addEventListener('click', () => {
@@ -353,7 +353,7 @@ function vista(){
    
 
     let buttonAdmin30 = document.createElement('button');
-    buttonAdmin30.className = "admin"
+    buttonAdmin30.className = "btn-vista"
     buttonAdmin30.textContent = "Coordinadora de Eventos"
     divBotones.appendChild(buttonAdmin30);
     buttonAdmin30.addEventListener('click', () => {
@@ -363,7 +363,7 @@ function vista(){
     });
 
     let buttonAdmin31 = document.createElement('button');
-    buttonAdmin31.className = "admin"
+    buttonAdmin31.className = "btn-vista"
     buttonAdmin31.textContent = "Asistente Administrativo"
     divBotones.appendChild(buttonAdmin31);
     buttonAdmin31.addEventListener('click', () => {

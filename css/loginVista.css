@@ -1,6 +1,5 @@
-/* Pantalla completa */
 .pantalla-login3 {
-    width: 100vw;
+    width: 100;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -10,7 +9,6 @@
     background-size: cover;
 }
 
-/* Contenedor interno */
 .contenedor-login3 {
     width: 380px;
     padding: 50px 40px;
@@ -24,7 +22,6 @@
     gap: 30px;
 }
 
-/* Título */
 .contenedor-login3 h2 {
     color: #0b3d2e; /* verde oscuro */
     margin: 0;
@@ -33,7 +30,6 @@
     letter-spacing: 1px;
 }
 
-/* Formulario */
 .formulario-login3 {
     width: 100%;
     display: flex;
@@ -41,7 +37,6 @@
     gap: 20px;
 }
 
-/* Inputs */
 .input-usuario3,
 .input-contrasena3 {
     padding: 15px 20px;
@@ -60,7 +55,6 @@
     box-shadow: 0 0 10px rgba(0,200,151,0.5);
 }
 
-/* Botones */
 .boton-ingresar3,
 .boton-volver3 {
     padding: 15px;
@@ -81,7 +75,6 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-/* Mensaje de error */
 .mensaje-error {
     font-size: 0.9rem;
     color: #e63946;
